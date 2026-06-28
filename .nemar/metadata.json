@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "A geometric shape regularity effect in the human brain: MEG dataset",
+  "description": "This magnetoencephalography (MEG) dataset comprises recordings from 20 adult participants viewing simple geometric shapes (hexagons, triangles, quadrilaterals) and other visual stimuli. The study investigates the neural mechanisms underlying human perception of regular geometric shapes, examining how the brain processes discrete geometric regularities such as symmetries and parallelism. The dataset supports research into the specialized brain systems engaged in abstract geometric perception and their distinction from general visual processing.",
+  "methods_description": "MEG data were collected during visual perception tasks involving geometric shapes and control stimuli. Participants viewed simple shapes including hexagons, triangles, and quadrilaterals. Data were anonymized and defaced using mne_bids (v0.16.0) with shuffled participant order, modified dates, and stripped gender information. Pre-processing was performed using mne-bids-pipeline with a custom configuration file.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,12 +24,39 @@
       "orcid": "0000-0002-7418-8275"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds006012.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "geometric shapes"
+    },
+    {
+      "term": "visual perception"
+    },
+    {
+      "term": "neural mechanisms"
+    },
+    {
+      "term": "regularity detection"
+    },
+    {
+      "term": "intraparietal cortex"
+    },
+    {
+      "term": "visual processing"
+    },
+    {
+      "term": "symmetry"
+    },
+    {
+      "term": "parallelism"
+    },
+    {
+      "term": "mathematical processing"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on006012",
       "identifier_type": "URL",
@@ -47,6 +76,11 @@
       "identifier": "10.18112/openneuro.ds006010",
       "identifier_type": "DOI",
       "relation_type": "IsSupplementedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006012.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -80,22 +114,19 @@
       "funder_name": "FYSSEN"
     },
     {
-      "funder_name": "FYSSEN Foundation",
-      "award_title": "Funding to Mathias Sablé-Meyer"
-    },
-    {
       "funder_name": "European Research Council",
-      "award_number": "ADG-2015-NeuroSyntax"
+      "award_number": "ERC-ADG-2015",
+      "award_title": "NeuroSyntax"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "76.3 GB (195 files)"
   ],
   "formats": [
     ".dat",
@@ -103,38 +134,8 @@
     ".gz",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This magnetoencephalography (MEG) dataset comprises recordings from 20 adult participants during the perception of geometric shapes, collected to investigate the neural mechanisms underlying human perception and recognition of regular geometric forms such as hexagons, triangles, and quadrilaterals. The study employs MEG to characterize brain dynamics and regional activation patterns in response to geometric regularities. Complementary functional MRI data from the same study are available separately at https://openneuro.org/datasets/ds006010. The dataset supports investigation of how discrete geometric features and visual regularities engage specialized brain systems involved in mathematical and symbolic processing.",
-  "methods_description": "MEG data were acquired during visual perception tasks involving geometric shapes (hexagons, triangles, quadrilaterals) and other visual categories from 20 adult participants. Data were anonymized and defaced using mne_bids (version 0.16.0) with shuffled participant order, modified dates, and stripped gender information. Pre-processing was performed using mne-bids-pipeline with a custom configuration file.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "geometric shapes"
-    },
-    {
-      "term": "visual perception"
-    },
-    {
-      "term": "geometric regularity"
-    },
-    {
-      "term": "intraparietal cortex"
-    },
-    {
-      "term": "mathematical cognition"
-    },
-    {
-      "term": "visual regularities"
-    },
-    {
-      "term": "neural dynamics"
-    },
-    {
-      "term": "symmetry"
-    }
-  ],
-  "source_hash": "7d24a843655b84f3ad50d3f357b6e947fbe87e370c48ddad0c71c5d20761c7ce"
+  "source_hash": "c57c07403a3d5b9237eaaffe1c3192bfe943c9bf1431a031414dec9e040173d7"
 }
