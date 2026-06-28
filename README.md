@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on006012-blue)](https://doi.org/10.82901/nemar.on006012)
+
 # A geometric shape regularity effect in the human brain: MEG dataset
 
 Authors:
