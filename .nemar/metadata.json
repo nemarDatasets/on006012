@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "A geometric shape regularity effect in the human brain: MEG dataset",
-  "description": "This magnetoencephalography (MEG) dataset comprises recordings from 20 adult participants viewing simple geometric shapes (hexagons, triangles, quadrilaterals) and other visual stimuli. The study investigates the neural mechanisms underlying human perception of regular geometric shapes, examining how the brain processes discrete geometric regularities such as symmetries and parallelism. The dataset supports research into the specialized brain systems engaged in abstract geometric perception and their distinction from general visual processing.",
-  "methods_description": "MEG data were collected during visual perception tasks involving geometric shapes and control stimuli. Participants viewed simple shapes including hexagons, triangles, and quadrilaterals. Data were anonymized and defaced using mne_bids (v0.16.0) with shuffled participant order, modified dates, and stripped gender information. Pre-processing was performed using mne-bids-pipeline with a custom configuration file.",
+  "description": "This dataset contains magnetoencephalography (MEG) recordings from 20 adult participants examining the neural mechanisms underlying perception of regular geometric shapes such as hexagons, triangles, and quadrilaterals. The study investigates how geometric regularity modulates brain activity in ventral visual, intraparietal, and inferior temporal regions, and compares neural responses to predictions from convolutional neural networks and transformer vision models. A companion fMRI dataset examining the same phenomenon is shared separately.",
+  "methods_description": "MEG data were collected from 20 adult participants during perception of simple geometric shapes. The raw data were manually organized into BIDS format and anonymized/defaced using mne_bids (mne_bids.anonymize_dataset), which shuffled participant order, changed dates, defaced anatomical images, and stripped gender information. Data were preprocessed using the mne-bids-pipeline with a custom configuration file.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -29,31 +29,27 @@
       "term": "MEG"
     },
     {
-      "term": "geometric shapes"
+      "term": "geometry"
     },
     {
-      "term": "visual perception"
+      "term": "Visual Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
     },
     {
-      "term": "neural mechanisms"
+      "term": "shape perception"
     },
     {
-      "term": "regularity detection"
+      "term": "intraparietal sulcus"
     },
     {
-      "term": "intraparietal cortex"
+      "term": "mathematical cognition"
     },
     {
-      "term": "visual processing"
+      "term": "convolutional neural networks"
     },
     {
-      "term": "symmetry"
-    },
-    {
-      "term": "parallelism"
-    },
-    {
-      "term": "mathematical processing"
+      "term": "transformer models"
     }
   ],
   "related_identifiers": [
@@ -97,8 +93,8 @@
       "funder_name": "FYSSEN to Mathias Sablé-Meyer"
     },
     {
-      "funder_name": "European Research Council",
-      "award_number": "ADG-2015",
+      "funder_name": "ERC",
+      "award_number": "ERC-ADG-2015 NeuroSyntax",
       "award_title": "NeuroSyntax"
     },
     {
@@ -112,11 +108,6 @@
     },
     {
       "funder_name": "FYSSEN"
-    },
-    {
-      "funder_name": "European Research Council",
-      "award_number": "ERC-ADG-2015",
-      "award_title": "NeuroSyntax"
     }
   ],
   "resource_type_general": "Dataset",
